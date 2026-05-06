@@ -1,0 +1,46 @@
+/* Main window container */
+window {
+    background-color: #1a1614;
+    color: #f4e7d3;
+    border: 3px solid #eeb96a;
+    font-family: "JetBrainsMono Nerd Font";
+}
+
+/* Outer box that contains everything */
+#outer-box {
+    padding: 0px; /* Removed padding so input can touch the edges */
+}
+
+/* The search bar integrated into the top border */
+#input {
+    background-color: #2a2421; /* Slightly lighter for contrast */
+    color: #f4e7d3;
+    border: 3px solid #eeb96a; 
+    margin: 0px;
+    padding: 15px;
+}
+
+/* The scrollable list area */
+#scroll {
+    padding: 15px; /* Padding is now here to keep the list away from edges */
+}
+
+/* Individual list entries */
+#entry {
+    padding: 10px;
+}
+
+/* Selected item styling */
+#entry:selected {
+    background-color: #eeb96a;
+}
+
+#entry:selected #text {
+    color: #1a1614;
+    font-weight: bold;
+}
+
+#text {
+    margin-left: 10px;
+}
+
